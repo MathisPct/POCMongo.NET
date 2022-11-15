@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBPoc", "MongoDBPoc\MongoDBPoc.csproj", "{E695D2FB-453B-4CCB-B60F-EF1D54942894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbTest", "DbTest\DbTest.csproj", "{DFC6E153-EEA4-4212-B8D2-024BE3FDCA68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E695D2FB-453B-4CCB-B60F-EF1D54942894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E695D2FB-453B-4CCB-B60F-EF1D54942894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E695D2FB-453B-4CCB-B60F-EF1D54942894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E695D2FB-453B-4CCB-B60F-EF1D54942894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC6E153-EEA4-4212-B8D2-024BE3FDCA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC6E153-EEA4-4212-B8D2-024BE3FDCA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC6E153-EEA4-4212-B8D2-024BE3FDCA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC6E153-EEA4-4212-B8D2-024BE3FDCA68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
