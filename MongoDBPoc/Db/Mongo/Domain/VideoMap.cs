@@ -7,7 +7,7 @@ using MongoDBPoc.Features.Video;
 
 namespace MongoDBPoc.Db.Domain;
 
-public class VideoMap : MongoMapper
+public class VideoMap : IMongoMapper
 {
     public void Map()
     {

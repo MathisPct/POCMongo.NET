@@ -6,7 +6,7 @@ using MongoDBPoc.Features.Category;
 
 namespace MongoDBPoc.Db.Domain;
 
-public class CategoryMap : MongoMapper
+public class CategoryMap : IMongoMapper
 {
     public void Map()
     {

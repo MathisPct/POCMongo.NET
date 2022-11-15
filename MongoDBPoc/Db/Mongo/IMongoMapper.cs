@@ -1,6 +1,6 @@
 ﻿namespace MongoDBPoc.Db;
 
-public interface MongoMapper
+public interface IMongoMapper
 {
     /**
      * Map class to document

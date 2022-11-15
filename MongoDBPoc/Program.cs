@@ -1,10 +1,7 @@
-using MongoDBPoc.Db.Domain;
+using MongoDBPoc.Db;
 
 var builder = WebApplication.CreateBuilder(args);
-CategoryMap categoryMap = new CategoryMap();
-categoryMap.Map();
-VideoMap videoMap = new VideoMap();
-videoMap.Map();
+MongoMapperInitializer.Initialize();
 
 var app = builder.Build();
 
