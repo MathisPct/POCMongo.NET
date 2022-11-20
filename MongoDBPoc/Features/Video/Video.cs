@@ -1,7 +1,4 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-
-namespace MongoDBPoc.Features.Video;
+﻿namespace MongoDBPoc.Features.Video;
 
 public class Video
 {
@@ -13,9 +10,7 @@ public class Video
     
     private string description;
     
-    private Category.Category _category;
-    
-    public string CategoryId { get; set; }
+    private List<Category.Category> category;
     
     public string Id
     {
@@ -41,9 +36,9 @@ public class Video
         set => description = value ?? throw new ArgumentNullException(nameof(value));
     }
     
-    public Category.Category Category
+    public List<Category.Category> Category
     {
-        get => _category;
-        set => _category = value;
+        get => category;
+        set => category = value;
     }
 }
