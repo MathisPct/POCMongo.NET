@@ -2,7 +2,7 @@
 
 public class MongoMapperAggregate : IMongoMapper
 {
-    private List<IMongoMapper> _mappers;
+    private List<IMongoMapper> _mappers = new();
 
     public List<IMongoMapper> Mappers => _mappers;
 
