@@ -14,7 +14,6 @@ public class CategoryMap : IMongoMapper
         {
             map.AutoMap();
             map.SetIgnoreExtraElements(true);
-            map.MapIdMember(category => category.Id).SetSerializer(new StringSerializer(BsonType.ObjectId));;
             map.MapMember(category => category.Name).SetElementName("name");
         });
     }

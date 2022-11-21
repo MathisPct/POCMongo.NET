@@ -9,10 +9,6 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
-        VideoMap videoMap = new VideoMap();
-        videoMap.Map();
-        CategoryMap categoryMap = new CategoryMap();
-        categoryMap.Map();
         MongodbContext mongodbContext = new MongodbContext();
         VideoRepository videoRepository = new VideoRepository(mongodbContext);
         List<Video> videos = videoRepository.FindAll();
@@ -24,7 +20,7 @@ public class UnitTest1
     {
         MongodbContext mongodbContext = new MongodbContext();
         VideoRepository videoRepository = new VideoRepository(mongodbContext);
-        List<Video> videos = videoRepository.FindByCategoryName("Jeux vidéos");
+        List<Video> videos = videoRepository.FindByCategoryName("Nintendo");
         Assert.Equal(2, videos.Count);
     }
 
@@ -34,6 +30,6 @@ public class UnitTest1
         MongodbContext mongodbContext = new MongodbContext();
         VideoRepository videoRepository = new VideoRepository(mongodbContext);
         List<Video> videos = videoRepository.FindByVideoName("Splatoon3");
-        Assert.Single(videos);
+        Assert.Equal(2, videos.Count);
     }
 }

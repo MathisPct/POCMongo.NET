@@ -19,7 +19,7 @@ public class VideoMap : IMongoMapper
             map.MapMember(video => video.Name).SetElementName("name");
             map.MapMember(video => video.YoutubeurId).SetElementName("youtubeurId");
             map.MapMember(video => video.Description).SetElementName("description");
-            map.MapMember(video => video.CategoryId).SetElementName("categoryId").SetSerializer(new StringSerializer(BsonType.ObjectId));
+            map.MapMember(video => video.Category).SetElementName("category");
         });
     }
 }

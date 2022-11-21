@@ -12,15 +12,11 @@ public class MongodbContext
     {
         var mongoClient = new MongoClient("mongodb://localhost:27017");
         this._database = mongoClient.GetDatabase("youstattest");
+        MongoMapperInitializer.Initialize();
     }
 
     public IMongoCollection<Video> Video()
     {
         return _database.GetCollection<Video>("video");
-    } 
-    
-    public IMongoCollection<Category> Category()
-    {
-        return _database.GetCollection<Category>("category");
-    } 
+    }
 }
