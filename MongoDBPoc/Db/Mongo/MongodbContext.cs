@@ -15,6 +15,13 @@ public class MongodbContext
         MongoMapperInitializer.Initialize();
     }
 
+    public MongodbContext(string connectionString, string databaseName)
+    {
+        var mongoClient = new MongoClient(connectionString);
+        _database = mongoClient.GetDatabase(databaseName);
+        MongoMapperInitializer.Initialize();
+    }
+
     public IMongoCollection<Video> Video()
     {
         return _database.GetCollection<Video>("video");
